@@ -22,6 +22,9 @@ jobs:
           
      # replaces config htpps for ssh
      
+      - name: is the ssh running?
+        run: ssh-agent -s
+            
       - name: SSH to server and Deploy App
         run: |
             git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
