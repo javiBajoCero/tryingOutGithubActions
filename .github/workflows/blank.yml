@@ -22,9 +22,7 @@ jobs:
           
      # replaces config htpps for ssh
       - name: replacing config
-        run: |
-          rm -rf .git/config
-          cp config .git/
+        run: git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
           
       - name: adding changes to git
         run: git add .
