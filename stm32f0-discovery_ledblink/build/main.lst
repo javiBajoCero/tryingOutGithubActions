@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cclFwPMQ.s 			page 1
+ARM GAS  /tmp/ccSklm3v.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   31:Core/Src/main.c **** 
   32:Core/Src/main.c **** /* Private define ------------------------------------------------------------*/
   33:Core/Src/main.c **** /* USER CODE BEGIN PD */
-ARM GAS  /tmp/cclFwPMQ.s 			page 2
+ARM GAS  /tmp/ccSklm3v.s 			page 2
 
 
   34:Core/Src/main.c **** /* USER CODE END PD */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   88:Core/Src/main.c **** 
   89:Core/Src/main.c ****   /* USER CODE END 2 */
   90:Core/Src/main.c **** 
-ARM GAS  /tmp/cclFwPMQ.s 			page 3
+ARM GAS  /tmp/ccSklm3v.s 			page 3
 
 
   91:Core/Src/main.c ****   /* Infinite loop */
@@ -129,9 +129,9 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   96:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
   97:Core/Src/main.c **** 	  HAL_Delay(100);
   98:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_D_GPIO_Port, LED_D_Pin);
-  99:Core/Src/main.c **** 	  HAL_Delay(100);
+  99:Core/Src/main.c **** 	  HAL_Delay(50);
  100:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_L_GPIO_Port, LED_L_Pin);
- 101:Core/Src/main.c **** 	  HAL_Delay(100);
+ 101:Core/Src/main.c **** 	  HAL_Delay(20);
  102:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_U_GPIO_Port, LED_U_Pin);
  103:Core/Src/main.c ****     /* USER CODE END WHILE */
  104:Core/Src/main.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  145:Core/Src/main.c **** /**
  146:Core/Src/main.c ****   * @brief GPIO Initialization Function
  147:Core/Src/main.c ****   * @param None
-ARM GAS  /tmp/cclFwPMQ.s 			page 4
+ARM GAS  /tmp/ccSklm3v.s 			page 4
 
 
  148:Core/Src/main.c ****   * @retval None
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   69 002c 2000     		movs	r0, r4
   70 002e FFF7FEFF 		bl	HAL_GPIO_WritePin
   71              	.LVL1:
-ARM GAS  /tmp/cclFwPMQ.s 			page 5
+ARM GAS  /tmp/ccSklm3v.s 			page 5
 
 
  159:Core/Src/main.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  174:Core/Src/main.c ****   * @brief  This function is executed in case of error occurrence.
  175:Core/Src/main.c ****   * @retval None
  176:Core/Src/main.c ****   */
-ARM GAS  /tmp/cclFwPMQ.s 			page 6
+ARM GAS  /tmp/ccSklm3v.s 			page 6
 
 
  177:Core/Src/main.c **** void Error_Handler(void)
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   40:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ASM
   41:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ASM                                  __asm
   42:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/cclFwPMQ.s 			page 7
+ARM GAS  /tmp/ccSklm3v.s 			page 7
 
 
   43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   97:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   98:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
   99:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
-ARM GAS  /tmp/cclFwPMQ.s 			page 8
+ARM GAS  /tmp/ccSklm3v.s 			page 8
 
 
  100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  134              	.LBE5:
  182:Core/Src/main.c ****   while (1)
  135              		.loc 1 182 3 discriminator 1 view .LVU23
-ARM GAS  /tmp/cclFwPMQ.s 			page 9
+ARM GAS  /tmp/ccSklm3v.s 			page 9
 
 
  183:Core/Src/main.c ****   {
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  181              		.loc 1 123 30 is_stmt 0 view .LVU33
  182 001c 013B     		subs	r3, r3, #1
  183 001e 0893     		str	r3, [sp, #32]
-ARM GAS  /tmp/cclFwPMQ.s 			page 10
+ARM GAS  /tmp/ccSklm3v.s 			page 10
 
 
  124:Core/Src/main.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  220              		.loc 1 143 1 view .LVU51
  221 0046 13B0     		add	sp, sp, #76
  222              		@ sp needed
-ARM GAS  /tmp/cclFwPMQ.s 			page 11
+ARM GAS  /tmp/ccSklm3v.s 			page 11
 
 
  223 0048 00BD     		pop	{pc}
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
   96:Core/Src/main.c **** 	  HAL_Delay(100);
  271              		.loc 1 96 4 discriminator 1 view .LVU60
  272 0016 8021     		movs	r1, #128
-ARM GAS  /tmp/cclFwPMQ.s 			page 12
+ARM GAS  /tmp/ccSklm3v.s 			page 12
 
 
  273 0018 0D4C     		ldr	r4, .L13
@@ -671,7 +671,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  279 0022 6420     		movs	r0, #100
  280 0024 FFF7FEFF 		bl	HAL_Delay
  281              	.LVL14:
-  98:Core/Src/main.c **** 	  HAL_Delay(100);
+  98:Core/Src/main.c **** 	  HAL_Delay(50);
  282              		.loc 1 98 4 discriminator 1 view .LVU62
  283 0028 8021     		movs	r1, #128
  284 002a 2000     		movs	r0, r4
@@ -679,10 +679,10 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  286              	.LVL15:
   99:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_L_GPIO_Port, LED_L_Pin);
  287              		.loc 1 99 4 discriminator 1 view .LVU63
- 288 0030 6420     		movs	r0, #100
+ 288 0030 3220     		movs	r0, #50
  289 0032 FFF7FEFF 		bl	HAL_Delay
  290              	.LVL16:
- 100:Core/Src/main.c **** 	  HAL_Delay(100);
+ 100:Core/Src/main.c **** 	  HAL_Delay(20);
  291              		.loc 1 100 4 discriminator 1 view .LVU64
  292 0036 8021     		movs	r1, #128
  293 0038 4900     		lsls	r1, r1, #1
@@ -691,7 +691,7 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  296              	.LVL17:
  101:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_U_GPIO_Port, LED_U_Pin);
  297              		.loc 1 101 4 discriminator 1 view .LVU65
- 298 0040 6420     		movs	r0, #100
+ 298 0040 1420     		movs	r0, #20
  299 0042 FFF7FEFF 		bl	HAL_Delay
  300              	.LVL18:
  102:Core/Src/main.c ****     /* USER CODE END WHILE */
@@ -717,21 +717,21 @@ ARM GAS  /tmp/cclFwPMQ.s 			page 1
  321              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  322              		.file 9 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
  323              		.file 10 "<built-in>"
-ARM GAS  /tmp/cclFwPMQ.s 			page 13
+ARM GAS  /tmp/ccSklm3v.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/cclFwPMQ.s:16     .text.MX_GPIO_Init:0000000000000000 $t
-     /tmp/cclFwPMQ.s:23     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-     /tmp/cclFwPMQ.s:98     .text.MX_GPIO_Init:000000000000004c $d
-     /tmp/cclFwPMQ.s:104    .text.Error_Handler:0000000000000000 $t
-     /tmp/cclFwPMQ.s:111    .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/cclFwPMQ.s:142    .text.SystemClock_Config:0000000000000000 $t
-     /tmp/cclFwPMQ.s:149    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/cclFwPMQ.s:236    .text.main:0000000000000000 $t
-     /tmp/cclFwPMQ.s:243    .text.main:0000000000000000 main
-     /tmp/cclFwPMQ.s:310    .text.main:0000000000000050 $d
+     /tmp/ccSklm3v.s:16     .text.MX_GPIO_Init:0000000000000000 $t
+     /tmp/ccSklm3v.s:23     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+     /tmp/ccSklm3v.s:98     .text.MX_GPIO_Init:000000000000004c $d
+     /tmp/ccSklm3v.s:104    .text.Error_Handler:0000000000000000 $t
+     /tmp/ccSklm3v.s:111    .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccSklm3v.s:142    .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccSklm3v.s:149    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccSklm3v.s:236    .text.main:0000000000000000 $t
+     /tmp/ccSklm3v.s:243    .text.main:0000000000000000 main
+     /tmp/ccSklm3v.s:310    .text.main:0000000000000050 $d
 
 UNDEFINED SYMBOLS
 memset
