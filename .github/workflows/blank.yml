@@ -29,7 +29,7 @@ jobs:
         run: git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
         
       - name: is the ssh reachable?
-        run: ssh -T git@github.com
+        run: ssh -vT git@github.com
         
       - name: SSH to server and Deploy App
         run: |
