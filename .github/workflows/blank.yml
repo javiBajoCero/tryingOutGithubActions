@@ -37,10 +37,10 @@ jobs:
      #   run: ssh -vT git@github.com     
             
       - name: git config1
-        run: git config --global user.email "javier.munoz@luxae.com"
+        run: git config --global user.email "javimusama@gmail.com"
         
       - name: git config2
-        run: git config --global user.name "javierMluxae"
+        run: git config --global user.name "javiBajoCero"
         
       - name: git config3
         run:  git config --global credential.helper cache
