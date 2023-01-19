@@ -22,8 +22,8 @@ jobs:
         
       - name: Config
         run: |
-         git config --global user.email "javimusama@gmail.com"
-         git config --global user.name "javiBajoCero"
+         git config --global user.email ${{ secrets.mailsecreto }}
+         git config --global user.name ${{ secrets.usersecreto }}
          git config --global credential.helper cache
         
       - name: git add .
