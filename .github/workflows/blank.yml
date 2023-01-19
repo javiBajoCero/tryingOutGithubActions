@@ -18,7 +18,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Fran perea quien lo lea $(date) >log.txt
+        run: echo Fran perea quien lo leaa $(date) >log.txt
           
      # replaces config htpps for ssh
      
