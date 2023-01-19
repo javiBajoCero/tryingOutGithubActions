@@ -24,7 +24,10 @@ jobs:
         run: |
          cd stm32f0-discovery_ledblink
          make
-         
+     
+      - name: flash firmware
+        run: sudo openocd
+        
       - name: Config
         run: |
          git config --global user.email ${{ secrets.mailsecreto }}
