@@ -21,11 +21,7 @@ jobs:
         run: echo Fran perea quien lo lea $(date) >log.txt
           
      # replaces config htpps for ssh
-      - name: replacing config
-        run: |
-         git pull
-         git reset --hard
-        
+     
       - name: replacing config
         run: git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
           
