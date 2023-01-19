@@ -22,7 +22,7 @@ jobs:
           
      # replaces config htpps for ssh
       - name: returns current user name
-        run: whoami
+        run: who
       - name: is the ssh agent running?
         run: ssh-agent -s
         
