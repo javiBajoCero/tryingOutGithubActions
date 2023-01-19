@@ -21,7 +21,8 @@ jobs:
         run: echo Fran perea quien lo lea $(date) >log.txt
           
      # replaces config htpps for ssh
-     
+      - name: returns current user name
+        run: whoami
       - name: is the ssh agent running?
         run: ssh-agent -s
         
