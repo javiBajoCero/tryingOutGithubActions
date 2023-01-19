@@ -25,7 +25,7 @@ jobs:
          git config --global user.email ${{ secrets.mailsecreto }}
          git config --global user.name ${{ secrets.usersecreto }}
          git config --global credential.helper cache
-        
+        # to make this work i had to modify the workflow permits in the github page to read and write
       - name: git add .
         run: git add .
         
