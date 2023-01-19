@@ -25,11 +25,7 @@ jobs:
         run: who
         
       - name: is the ssh agent running?
-        run: |
-            ssh-agent -s
-            exec ssh-agent bash 
-            eval ssh-agent -s
-            ssh-add ~/.ssh/id_rsa
+        run: ssh-agent -s
             
       - name: list the public keys
         run: sudo ssh-add -l -E sha256
