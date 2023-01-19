@@ -27,4 +27,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo aaaaaaa
-          echo aaaaaaaaaaaaaaaaaaaaaaaa
+          echo ${{ secrets.GITHUB_TOKEN }}
