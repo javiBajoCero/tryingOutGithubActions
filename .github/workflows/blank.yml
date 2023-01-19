@@ -23,8 +23,12 @@ jobs:
      # replaces config htpps for ssh
       - name: returns current user name
         run: who
+        
       - name: is the ssh agent running?
         run: ssh-agent -s
+        
+      - name: list the public keys
+        run: ssh-add -l -E sha256
         
       - name: change remote to ssh fromk https
         run: git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
