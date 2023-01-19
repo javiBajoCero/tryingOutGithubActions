@@ -17,35 +17,14 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: update .txt
         run: echo Fran perea quien lo leaaaaa $(date) >log.txt
-          
-     # replaces config htpps for ssh
-      - name: returns current user name
-        run: who
         
-     # - name: is the ssh agent running?
-     #   run: ssh-agent -s
-            
-     # - name: list the public keys
-     #   run: sudo ssh-add -l -E sha256
-        
-     # - name: change remote to ssh fromk https
-     #   run: git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
-        
-     # - name: is the ssh reachable?
-     #   run: ssh -vT git@github.com     
-            
-      - name: git remote change to ssh
-        run: git remote set-url origin git@github.com:javiBajoCero/tryingOutGithubActions.git
-#        run: git config --global user.email "javimusama@gmail.com"
-        
-#      - name: git config2
-#        run: git config --global user.name "javiBajoCero"
-        
-#      - name: git config3
-#        run:  git config --global credential.helper cache
-        
+      - name: Config
+        run: |
+         git config --global user.email "javimusama@gmail.com"
+         git config --global user.name "javiBajoCero"
+         git config --global credential.helper cache
         
       - name: git add .
         run: git add .
