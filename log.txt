@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Fran perea quien lo lea Thu 19 Jan 12:17:00 CET 2023
-=======
-Fran perea quien lo lea Thu 19 Jan 12:10:34 CET 2023
->>>>>>> 241c2201501ae207e1f42c3c662eb11ef3f66149
+Fran perea quien lo lea Thu 19 Jan 12:26:16 CET 2023
