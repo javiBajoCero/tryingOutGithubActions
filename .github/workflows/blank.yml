@@ -20,6 +20,11 @@ jobs:
       - name: update .txt
         run: echo Fran perea quien lo leaaaaa $(date) >log.txt
         
+     - name: build firmware
+        run: |
+         cd stm32f0-discovery_ledblink
+         make
+         
       - name: Config
         run: |
          git config --global user.email ${{ secrets.mailsecreto }}
