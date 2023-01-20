@@ -23,7 +23,7 @@ jobs:
       #static checking the code https://www.youtube.com/watch?v=24ajcWSfdaY
       - name: staticcheck
         run: |
-         cppcheck --enable=all --error-exitcode=1 stm32f0-discovery_ledblink/
+         cppcheck --enable=all --error-exitcode=1 stm32f0-discovery_ledblink/Core/Src -I stm32f0-discovery_ledblink/Core/Inc >cpp_check_log.txt
          
       #builds/compiles the code, creates the .bin file
       - name: build firmware
