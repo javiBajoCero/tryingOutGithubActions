@@ -24,7 +24,7 @@ jobs:
       - name: staticcheck
         run: |
          cd stm32f0-discovery_ledblink
-         cppcheck
+         cppcheck --enable-all
          
       #builds/compiles the code, creates the .bin file
       - name: build firmware
