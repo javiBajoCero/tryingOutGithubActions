@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccqz3Ekz.s 			page 1
+ARM GAS  /tmp/ccUeZZmA.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
   31:Core/Src/main.c **** 
   32:Core/Src/main.c **** /* Private define ------------------------------------------------------------*/
   33:Core/Src/main.c **** /* USER CODE BEGIN PD */
-ARM GAS  /tmp/ccqz3Ekz.s 			page 2
+ARM GAS  /tmp/ccUeZZmA.s 			page 2
 
 
   34:Core/Src/main.c **** /* USER CODE END PD */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
   88:Core/Src/main.c **** 
   89:Core/Src/main.c ****   /* USER CODE END 2 */
   90:Core/Src/main.c **** 
-ARM GAS  /tmp/ccqz3Ekz.s 			page 3
+ARM GAS  /tmp/ccUeZZmA.s 			page 3
 
 
   91:Core/Src/main.c ****   /* Infinite loop */
@@ -137,11 +137,11 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  104:Core/Src/main.c **** 
  105:Core/Src/main.c ****     /* USER CODE BEGIN 3 */
  106:Core/Src/main.c **** HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
- 107:Core/Src/main.c **** HAL_Delay(100);
+ 107:Core/Src/main.c **** HAL_Delay(10);
  108:Core/Src/main.c **** HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
- 109:Core/Src/main.c **** HAL_Delay(100);
+ 109:Core/Src/main.c **** HAL_Delay(10);
  110:Core/Src/main.c **** HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
- 111:Core/Src/main.c **** HAL_Delay(100);
+ 111:Core/Src/main.c **** HAL_Delay(10);
  112:Core/Src/main.c ****   }
  113:Core/Src/main.c ****   /* USER CODE END 3 */
  114:Core/Src/main.c **** }
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  145:Core/Src/main.c ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
  146:Core/Src/main.c ****   {
  147:Core/Src/main.c ****     Error_Handler();
-ARM GAS  /tmp/ccqz3Ekz.s 			page 4
+ARM GAS  /tmp/ccUeZZmA.s 			page 4
 
 
  148:Core/Src/main.c ****   }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
   63              		.loc 1 164 3 view .LVU8
   64 0022 F025     		movs	r5, #240
   65 0024 AD00     		lsls	r5, r5, #2
-ARM GAS  /tmp/ccqz3Ekz.s 			page 5
+ARM GAS  /tmp/ccUeZZmA.s 			page 5
 
 
   66 0026 0A4C     		ldr	r4, .L2+4
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  174:Core/Src/main.c **** 
  175:Core/Src/main.c **** /* USER CODE BEGIN 4 */
  176:Core/Src/main.c **** 
-ARM GAS  /tmp/ccqz3Ekz.s 			page 6
+ARM GAS  /tmp/ccUeZZmA.s 			page 6
 
 
  177:Core/Src/main.c **** /* USER CODE END 4 */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
   34:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Fallback for __has_builtin */
   35:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __has_builtin
   36:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __has_builtin(x) (0)
-ARM GAS  /tmp/ccqz3Ekz.s 			page 7
+ARM GAS  /tmp/ccUeZZmA.s 			page 7
 
 
   37:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
   91:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   92:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_READ(addr)          (((const struct T_UINT16_READ *)(const void *)(add
   93:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccqz3Ekz.s 			page 8
+ARM GAS  /tmp/ccUeZZmA.s 			page 8
 
 
   94:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_WRITE
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  128 0000 72B6     		cpsid i
  129              	@ 0 "" 2
  130              		.thumb
-ARM GAS  /tmp/ccqz3Ekz.s 			page 9
+ARM GAS  /tmp/ccUeZZmA.s 			page 9
 
 
  131              		.syntax unified
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  177              		.loc 1 128 36 is_stmt 0 view .LVU31
  178 0018 0223     		movs	r3, #2
  179 001a 0593     		str	r3, [sp, #20]
-ARM GAS  /tmp/ccqz3Ekz.s 			page 10
+ARM GAS  /tmp/ccUeZZmA.s 			page 10
 
 
  129:Core/Src/main.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  216              	.LVL6:
  145:Core/Src/main.c ****   {
  217              		.loc 1 145 6 view .LVU50
-ARM GAS  /tmp/ccqz3Ekz.s 			page 11
+ARM GAS  /tmp/ccUeZZmA.s 			page 11
 
 
  218 0042 0028     		cmp	r0, #0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
   93:Core/Src/main.c ****   {
  267              		.loc 1 93 3 discriminator 1 view .LVU58
   95:Core/Src/main.c **** 	  HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
-ARM GAS  /tmp/ccqz3Ekz.s 			page 12
+ARM GAS  /tmp/ccUeZZmA.s 			page 12
 
 
  268              		.loc 1 95 4 discriminator 1 view .LVU59
@@ -708,7 +708,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  305 0048 2000     		movs	r0, r4
  306 004a FFF7FEFF 		bl	HAL_GPIO_TogglePin
  307              	.LVL19:
- 106:Core/Src/main.c **** HAL_Delay(100);
+ 106:Core/Src/main.c **** HAL_Delay(10);
  308              		.loc 1 106 1 discriminator 1 view .LVU67
  309 004e 2900     		movs	r1, r5
  310 0050 2000     		movs	r0, r4
@@ -716,13 +716,13 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  312              	.LVL20:
  107:Core/Src/main.c **** HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
  313              		.loc 1 107 1 discriminator 1 view .LVU68
- 314 0056 6420     		movs	r0, #100
+ 314 0056 0A20     		movs	r0, #10
  315 0058 FFF7FEFF 		bl	HAL_Delay
-ARM GAS  /tmp/ccqz3Ekz.s 			page 13
+ARM GAS  /tmp/ccUeZZmA.s 			page 13
 
 
  316              	.LVL21:
- 108:Core/Src/main.c **** HAL_Delay(100);
+ 108:Core/Src/main.c **** HAL_Delay(10);
  317              		.loc 1 108 1 discriminator 1 view .LVU69
  318 005c 2900     		movs	r1, r5
  319 005e 2000     		movs	r0, r4
@@ -730,10 +730,10 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  321              	.LVL22:
  109:Core/Src/main.c **** HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
  322              		.loc 1 109 1 discriminator 1 view .LVU70
- 323 0064 6420     		movs	r0, #100
+ 323 0064 0A20     		movs	r0, #10
  324 0066 FFF7FEFF 		bl	HAL_Delay
  325              	.LVL23:
- 110:Core/Src/main.c **** HAL_Delay(100);
+ 110:Core/Src/main.c **** HAL_Delay(10);
  326              		.loc 1 110 1 discriminator 1 view .LVU71
  327 006a 2900     		movs	r1, r5
  328 006c 2000     		movs	r0, r4
@@ -741,7 +741,7 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  330              	.LVL24:
  111:Core/Src/main.c ****   }
  331              		.loc 1 111 1 discriminator 1 view .LVU72
- 332 0072 6420     		movs	r0, #100
+ 332 0072 0A20     		movs	r0, #10
  333 0074 FFF7FEFF 		bl	HAL_Delay
  334              	.LVL25:
  335 0078 C9E7     		b	.L12
@@ -761,21 +761,21 @@ ARM GAS  /tmp/ccqz3Ekz.s 			page 1
  350              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  351              		.file 9 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
  352              		.file 10 "<built-in>"
-ARM GAS  /tmp/ccqz3Ekz.s 			page 14
+ARM GAS  /tmp/ccUeZZmA.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/ccqz3Ekz.s:16     .text.MX_GPIO_Init:0000000000000000 $t
-     /tmp/ccqz3Ekz.s:23     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-     /tmp/ccqz3Ekz.s:98     .text.MX_GPIO_Init:000000000000004c $d
-     /tmp/ccqz3Ekz.s:104    .text.Error_Handler:0000000000000000 $t
-     /tmp/ccqz3Ekz.s:111    .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/ccqz3Ekz.s:142    .text.SystemClock_Config:0000000000000000 $t
-     /tmp/ccqz3Ekz.s:149    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/ccqz3Ekz.s:236    .text.main:0000000000000000 $t
-     /tmp/ccqz3Ekz.s:243    .text.main:0000000000000000 main
-     /tmp/ccqz3Ekz.s:339    .text.main:000000000000007c $d
+     /tmp/ccUeZZmA.s:16     .text.MX_GPIO_Init:0000000000000000 $t
+     /tmp/ccUeZZmA.s:23     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+     /tmp/ccUeZZmA.s:98     .text.MX_GPIO_Init:000000000000004c $d
+     /tmp/ccUeZZmA.s:104    .text.Error_Handler:0000000000000000 $t
+     /tmp/ccUeZZmA.s:111    .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccUeZZmA.s:142    .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccUeZZmA.s:149    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccUeZZmA.s:236    .text.main:0000000000000000 $t
+     /tmp/ccUeZZmA.s:243    .text.main:0000000000000000 main
+     /tmp/ccUeZZmA.s:339    .text.main:000000000000007c $d
 
 UNDEFINED SYMBOLS
 memset
