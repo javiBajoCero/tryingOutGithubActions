@@ -20,11 +20,11 @@ jobs:
       - name: update .txt
         run: echo Fran perea quien lo lea $(date) >log.txt
         
-      #static checking the code
+      #static checking the code https://www.youtube.com/watch?v=24ajcWSfdaY
       - name: staticcheck
         run: |
          cd stm32f0-discovery_ledblink
-         cppcheck --enable=all
+         cppcheck --enable=all --error-exitcode=1
          
       #builds/compiles the code, creates the .bin file
       - name: build firmware
