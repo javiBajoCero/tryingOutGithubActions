@@ -18,7 +18,7 @@ jobs:
 
       # just a fun text and the date
       - name: update .txt
-        run: echo Fran perea quien lo lea $(date) >log.txt
+        run: echo Fran perea quien lo lea \n $(date) >lastbuilddate.txt
         
       #static checking the code https://www.youtube.com/watch?v=24ajcWSfdaY
       - name: staticcheck
